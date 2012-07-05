@@ -1,5 +1,5 @@
 % Iris 데이터 분석 
-% 전희원 
+% 전희원, 홍성학
 % 2012-07-05
 
 
@@ -139,13 +139,25 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width)) + geom_point(aes(colour=Species))
 
 그래프는 많으면 많을 수록 좋다. 
 
-```{r fig2,fig.width=8,fig.height=6, message=FALSE}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, colour=Species)) +
-  geom_point()  + geom_smooth()  +  facet_grid(. ~ Species)
-
+```{r fig2,fig.width=8,fig.height=6, message=FALSE, tidy=TRUE}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, colour=Species)) + geom_point()  + geom_smooth()  +  facet_grid(. ~ Species)
+print("asdasdasdasd 
+      asdasdasdasd
+      asdasdasdasd
+      asdasdasdasd
+      asdasdasdasd
+      asdasdasdasd
+      as
+      dasdasd
+      asdas
+      d
+      asd
+      asd
+      as
+      das
+      dasdasdsadasdasdasd
+      asdasdasdasdsa")
 ```
-
-
 
 
 

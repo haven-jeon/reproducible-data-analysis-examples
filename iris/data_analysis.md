@@ -1,5 +1,5 @@
 % Iris 데이터 분석 
-% 전희원 
+% 전희원, 홍성학
 % 2012-07-05
 
 
@@ -218,6 +218,14 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
 
 ![plot of chunk fig2](figure/fig2.png) 
 
+```r
+print("asdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nas\ndasdasd\nasdas\nd\nasd\nasd\nas\ndas\ndasdasdsadasdasdasd\nasdasdasdasdsa")
+```
+
+```
+## [1] "asdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nasdasdasdasd\nas\ndasdasd\nasdas\nd\nasd\nasd\nas\ndas\ndasdasdsadasdasdasd\nasdasdasdasdsa"
+```
+
 
 
 
@@ -240,3 +248,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
 
 
 
+
+
+-------
+This report was generated with [R](http://www.r-project.org/) (2.15.1) and [pander](https://github.com/daroczig/pander) (0.1) on x86_64-pc-mingw32 platform.
