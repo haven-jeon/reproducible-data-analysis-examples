@@ -42,7 +42,7 @@ set.seed(123)
 Sepal.Length  | 꽃받침 길이  | 비고란 
 Sepal.Width   | 꽃받침 너비  | 비고란2 
 
-데이터 위치[iris](https://github.com/haven-jeon/reproducible-data-analysis-examples/blob/master/iris/iris.csv)는 될수 있는한 웹으로 접근 가능한 파일서버나 git에 올려두어 원격으로 패칭해서 문서생성 및 코드생성이 가능하게 한다. 
+데이터 위치[iris](iris.csv)는 될수 있는한 웹으로 접근 가능한 파일서버나 git에 올려두어 원격으로 패칭해서 문서생성 및 코드생성이 가능하게 한다. 
 
 
 
@@ -68,7 +68,8 @@ summary(iris)
 데이터 전처리에 대한 설명 
 
 > 되도록 전처리는 R 내에서 수행되도록 한다. 
-> 예외가 있을 수 있는데, 그럴경우 스크립트 포함을 문서내 포함하거나 > 따로 git 주소를 넣어주고 사용 코드도 넣어준다.  
+> 예외가 있을 수 있는데, 그럴경우 스크립트 포함을 문서내 포함하거나 
+> 따로 git 주소를 넣어주고 사용 코드도 넣어준다.  
 
 
 
