@@ -6,6 +6,16 @@ install_github('pander', 'daroczig')
 library(pander)
 
 
-knit("data_analysis.Rmd")
+setwd("iris")
 
+#system("ls -al")
 
+knit("data_analysis.md")
+
+Pandoc.convert(f="data_analysis.md", format="docx")
+
+?Pandoc.convert
+
+?knit
+
+knit

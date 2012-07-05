@@ -69,9 +69,12 @@ summary(iris)
 
 > 되도록 전처리는 R 내에서 수행되도록 한다. 
 > 예외가 있을 수 있는데, 그럴경우 스크립트 포함을 문서내 포함하거나 
-> 따로 git 주소를 넣어주고 사용 코드도 넣어준다.  
+> 따로 git 주소를 넣어주고 짧다면 코드도 넣어준다.  
 
 
+
+1. [preprocessing.py](preprocessing.py) 사용 정확한 레코드 형식으로 만들어 준다. 
+2. `cut -f1-3 iris.csv` 형식으로 XX처리를 해준다. 
 
 ```python
 #!/usr/bin/python
@@ -124,14 +127,11 @@ iris2$log_sepal_length <- log(iris2$Sepal.Length)
 
 ### Visualization  
 
-시각화는 대부분 [ggplot2]을 사용하길 추천한다. 
+시각화는 대부분 [ggplot2]을 사용하길 추천한다. 그리고 되도록 코드에서 한글 사용은 피한다. 
 
 ```{r fig1,fig.width=7, fig.height=6, tidy=TRUE,message=FALSE}
 library(ggplot2)
 
-#아래와 같은 방식은 에러가 출력됨 
-#ggplot(iris, aes(Sepal.Length, Sepal.Width)) + geom_point(aes(colour=Species)) + 
-# xlab("꽃받침 너비") + ylab("꽃받침 길이")
 
 ggplot(iris, aes(Sepal.Length, Sepal.Width)) + geom_point(aes(colour=Species)) 
 
@@ -139,7 +139,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width)) + geom_point(aes(colour=Species))
 
 그래프는 많으면 많을 수록 좋다. 
 
-```{r fig2,fig.width=10,fig.height=6, message=FALSE}
+```{r fig2,fig.width=8,fig.height=6, message=FALSE}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, colour=Species)) +
   geom_point()  + geom_smooth()  +  facet_grid(. ~ Species)
 
