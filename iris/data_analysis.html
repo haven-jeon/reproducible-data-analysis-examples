@@ -223,6 +223,7 @@ hljs.initHighlightingOnLoad();
 
 <ul>
 <li><strong>Edgar Anderson&#39;s <a href="http://en.wikipedia.org/wiki/Iris_flower_data_set">Iris</a></strong> 데이터를 분석에 활용하겠고, 분석 예제를 통해서 분석 문서 템플릿을 정하는게 최종 목적이다. </li>
+<li>과정중에 질문/요청은 언제나 받는다. </li>
 </ul>
 
 <h2>Data explanation</h2>
@@ -248,9 +249,12 @@ hljs.initHighlightingOnLoad();
 </tr>
 </tbody></table>
 
+<p>데이터 위치<a href="iris.csv">iris</a>는 될수 있는한 웹으로 접근 가능한 파일서버나 git에 올려두어 원격으로 패칭해서 문서생성 및 코드생성이 가능하게 한다. </p>
+
 <h3>Data Summary</h3>
 
-<p>데이터 요약의 경우 raw 데이터의 개략적인 모습을 보여주기 위해서 함 </p>
+<p>데이터 요약의 경우 raw 데이터의 개략적인 모습을 보여주기 위해서 함 <br/>
+개략적으로 head() 명령어나 </p>
 
 <pre><code class="r">head(iris)
 </code></pre>
@@ -293,7 +297,8 @@ hljs.initHighlightingOnLoad();
 
 <blockquote>
 <p>되도록 전처리는 R 내에서 수행되도록 한다. <br/>
-예외가 있을 수 있는데, 그럴경우 스크립트 포함을 문서내 포함하거나 &gt; 따로 git 주소를 넣어주고 사용 코드도 넣어준다.  </p>
+예외가 있을 수 있는데, 그럴경우 스크립트 포함을 문서내 포함하거나 <br/>
+따로 git 주소를 넣어주고 사용 코드도 넣어준다.  </p>
 </blockquote>
 
 <pre><code class="python">#!/usr/bin/python
