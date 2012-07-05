@@ -10,7 +10,8 @@ setwd("iris")
 
 #system("ls -al")
 
-knit("data_analysis.md")
+#data_analysis.md
+knit("data_analysis.Rmd")
 
 Pandoc.convert(f="data_analysis.md", format="docx")
 
